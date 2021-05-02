@@ -1,0 +1,26 @@
+@import "../../style/abstracts/variables";
+@import "../../style/abstracts/mixins";
+
+#navigation {
+  display: flex;
+  align-items: center;
+  background-color: $dark-grey;
+  .nav a {
+    padding: 5px;
+    margin: 5px 15px;
+    border-radius: 5px;
+  }
+  .navbar-toggler-icon {
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-size: 4px 4px;
+    background-image: repeating-linear-gradient(
+      0deg,
+      $primary-color,
+      $secondary-color 0.7000000000000001px,
+      #e5e5f7 0.7000000000000001px,
+      #e5e5f7
+    );
+    background-repeat: inherit;
+  }
+}
