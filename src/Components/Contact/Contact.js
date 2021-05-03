@@ -3,19 +3,24 @@ import Fade from "react-reveal/Fade";
 import { Container } from "react-bootstrap";
 import PortfolioContext from "../Context/Context";
 import emailjs from "emailjs-com";
-import { useForm } from "react-hook-form";
+// import { useForm } from "react-hook-form";
 import "./Contact.scss";
 import "../../style/components/_buttons.scss";
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
   const { cta, btn } = contact;
-  const {
-    register,
-    formState: { errors },
-  } = useForm();
+  // const {
+  //   register,
+
+  //   formState: { errors },
+  // } = useForm();
 
   function sendEmail(e) {
     e.preventDefault();
+    // console.log("name", e.target.name.value);
+    // console.log("sub", e.target.sub.value);
+    // console.log("email", e.target.email.value);
+    // console.log("message", e.target.message.value);
     emailjs
       .sendForm(
         "service_2rkp1q2",
@@ -48,61 +53,31 @@ const Contact = () => {
               <input
                 className="form-control inputBox"
                 placeholder="Name"
-                {...register("name", { required: true })}
+                name="name"
+                required
               />
-              {errors.name && (
-                <span
-                  style={{ fontSize: "16px", color: "red", fontWeight: "500" }}
-                >
-                  This field is required
-                </span>
-              )}
               <br /> <br />
               <input
                 className="form-control inputBox"
                 placeholder="Subject"
-                {...register("sub", { required: true })}
+                name="sub"
+                required
               />
-              {errors.sub && (
-                <span
-                  style={{ fontSize: "16px", color: "red", fontWeight: "500" }}
-                >
-                  This field is required
-                </span>
-              )}
               <br /> <br />
               <input
                 className="form-control inputBox"
                 placeholder="Email"
-                {...register("email", {
-                  required: true,
-                  pattern: /\S+@\S+\.\S+/,
-                  // validate: true,
-                })}
+                name="email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               />
-              {errors.email && (
-                <span
-                  style={{ fontSize: "16px", color: "red", fontWeight: "500" }}
-                >
-                  This field is required
-                </span>
-              )}
               <br /> <br />
               <textarea
                 className="form-control inputBox"
                 placeholder="Your Message"
-                {...register("message", {
-                  required: true,
-                  validate: true,
-                })}
+                name="message"
+                required
               />
-              {errors.message && (
-                <span
-                  style={{ fontSize: "16px", color: "red", fontWeight: "500" }}
-                >
-                  This field is required
-                </span>
-              )}
               <br /> <br />
               <input
                 className="cta-btn submitBtn cta-btn--resume"

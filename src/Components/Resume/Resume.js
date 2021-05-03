@@ -1,23 +1,24 @@
 import React from "react";
 import Navigation from "../Navigation/Navigation";
-import "./Resume.scss";
+// import "./Resume.scss";
 import "../../style/base/_typography.scss";
 import Project from "../Project/Project";
+import "./Resume.css";
 
 const Resume = () => {
   return (
     <div>
       <Navigation></Navigation>
-      <div id="resume" class="yui-t7">
+      <div id="resume" className="yui-t7">
         <div id="inner">
           <div id="hd">
-            <div class=" row">
-              <div class="first col-md-8">
+            <div className="row">
+              <div className="first col-md-8">
                 <h1>Hridoy Khan</h1>
                 <h2>Web Developer</h2>
               </div>
-              <div class="col-md-4">
-                <div class="contact-info">
+              <div className="col-md-4">
+                <div className="contact-info">
                   <h3>
                     <a
                       target="_blank"
@@ -33,7 +34,9 @@ const Resume = () => {
                       khanmuhammadhridoy@gmail.com
                     </a>
                   </h3>
-                  <h3>(+880) 01768 949414</h3>
+                  <h3>
+                    <a href="tel:+8801768949414">(+880) 01768 949414</a>
+                  </h3>
                   <h3>
                     <a
                       target="_blank"
@@ -55,63 +58,63 @@ const Resume = () => {
               </div>
             </div>
           </div>
-          <div class="yui-gf">
-            <div class="yui-u first">
+          <div className="yui-gf">
+            <div className="yui-u first">
               <h2>Skills</h2>
             </div>
           </div>
-          <div class="row">
+          <div className="row">
             <p className="col-md-3">
-              <div class=" first">
+              <div className=" first">
                 <h2>Expert</h2>
               </div>
-              <div class="">
-                <ul class="talent">
+              <div className="">
+                <ul className="talent">
                   <li>React JS</li>
                   <li>HTML5</li>
                   <li>CSS3</li>
                   <li>JavaScript</li>
                   <li>ES6</li>
                   <li>Bootstrap</li>
-                  <li class="last">MATERIAL-UI</li>
+                  <li className="last">MATERIAL-UI</li>
                 </ul>
               </div>
             </p>
             <p className="col-md-3">
-              <div class=" first">
+              <div className=" first">
                 <h2>Comfortable</h2>
               </div>
-              <ul class="talent">
+              <ul className="talent">
                 <li>MongoDB</li>
                 <li>Firebase</li>
                 <li>Netlify</li>
-                <li class="last">Heroku</li>
+                <li className="last">Heroku</li>
               </ul>
             </p>
             <p className="col-md-3">
-              <div class=" first">
+              <div className=" first">
                 <h2>Familiar</h2>
               </div>
-              <ul class="talent">
+              <ul className="talent">
                 <li>NodeJS</li>
                 <li>Redux</li>
-                <li class="last">TypeScript</li>
+                <li className="last">TypeScript</li>
               </ul>
             </p>
             <p className="col-md-3">
-              <div class=" first">
+              <div className=" first">
                 <h2>Tools</h2>
               </div>
-              <ul class="talent">
+              <ul className="talent">
                 <li> VS Code</li>
                 <li>Git/GitHub</li>
-                <li class="last">Chrome Dev Tool</li>
+                <li className="last">Chrome Dev Tool</li>
               </ul>
             </p>
           </div>
           <div id="bd">
-            <p class="yui-gf">
-              <div class=" first">
+            <p className="yui-gf">
+              <div className=" first">
                 <h2>Objective</h2>
               </div>
               <p>
@@ -120,10 +123,11 @@ const Resume = () => {
                 the user experience.
               </p>
             </p>
-
-            <Project></Project>
-            <p class="">
-              <div class=" first">
+            <div className="resumePro">
+              <Project></Project>
+            </div>
+            <p className="">
+              <div className=" first">
                 <h2>Education</h2>
               </div>
               <div>

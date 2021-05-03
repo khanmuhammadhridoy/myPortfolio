@@ -10,21 +10,25 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <a className="cta-btn cta-btn--hero" href="/#hero">
+            <a className="cta-btn text-color-main" href="/home">
               Home
             </a>
-            <a className="cta-btn cta-btn--hero" href="/#about">
+            <a className="cta-btn text-color-main" href="/#about">
               About
             </a>
-            <a className="cta-btn cta-btn--hero" href="/#projects">
+            <a className="cta-btn text-color-main" href="/#projects">
               Portfolio
             </a>
-            <a className="cta-btn cta-btn--hero" href="/#contact">
+            <a className="cta-btn text-color-main" href="/#contact">
               Contact
             </a>
-            <Link className="cta-btn cta-btn--hero" to="/resume">
+            {/* <Link className="cta-btn text-color-main" to="/blog">
+              Blog
+            </Link> */}
+            <Link className="cta-btn text-color-main" to="/resume">
               Resume
             </Link>
+            
           </Nav>
         </Navbar.Collapse>
       </Navbar>

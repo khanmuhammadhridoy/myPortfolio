@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="footer navbar-static-bottom text-center">
       <Container>
         <span className="back-to-top">
-          <Link to="navigation" smooth duration={1000}>
+          <Link to="hero" smooth duration={1000}>
             <FontAwesomeIcon icon={faAngleUp} />
           </Link>
         </span>
