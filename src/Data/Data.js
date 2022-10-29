@@ -17,7 +17,7 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: "https://i.ibb.co/nDWC5mY/octa.png",
+  img: "https://i.ibb.co/583fkXs/octa.png",
   paragraphOne: `I am a web developer. Generally works with react js.
   I am an expert in debugging, troubleshooting, critical thinking, leadership, working in groups, etc.`,
   paragraphTwo: ``,
