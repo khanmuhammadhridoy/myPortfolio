@@ -1,6 +1,11 @@
 import React from "react";
 import "./App.scss";
-import { BrowserRouter as Router, Switch,Redirect, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Navigate,
+  Route,
+} from "react-router-dom";
 import Home from "./Components/Home/Home";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -10,21 +15,13 @@ library.add(fab);
 function App() {
   return (
     <Router>
-      <Switch>
-        {/* <Route path="/home">
-          <Home></Home>
-        </Route> */}
-        <Redirect from='/home/' to="/" />
-        <Route path="/resume">
-          <Resume></Resume>
-        </Route>
-        {/* <Route path="/blog">
-          <Blog></Blog>
-        </Route> */}
-        <Route exact path="/">
-          <Home></Home>
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/home/" element={<Navigate to="/" />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/resume" element={<Resume />} />
+        {/* <Route path="/resume" element={<Blog />} /> */}
+        <Route exact path="/" element={<Home />} />
+      </Routes>
     </Router>
   );
 }
