@@ -9,7 +9,9 @@ import "../../style/base/_typography.scss";
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphThree, resume } = about;
+  // const { img, paragraphOne, paragraphThree, resume } = about;
+
+  const { paragraphOne, paragraphThree, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
