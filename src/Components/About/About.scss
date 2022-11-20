@@ -24,6 +24,7 @@
   }
 
   .about-wrapper {
+    align-items: center;
     @include respond(phone) {
       padding-bottom: 5rem;
     }

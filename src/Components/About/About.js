@@ -31,13 +31,13 @@ const About = () => {
           <h2 className="section-title text-center">About Me</h2>
         </Fade>
         <Row className="about-wrapper">
-          <Col md={6} sm={12}>
+          {/* <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
                 <img width="60%" src={img} alt="" />
               </div>
             </Fade>
-          </Col>
+          </Col> */}
           <Col md={6} sm={12}>
             <Fade
               left={isDesktop}
