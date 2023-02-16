@@ -4,3 +4,10 @@
 
 theme gatsby-simplefolio
 
+
+<!-- 
+    firebase-hosting 
+        install firebase 
+        firebase login
+        firebase deploy
+ -->
