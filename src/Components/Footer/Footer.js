@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-scroll";
 import PortfolioContext from "../Context/Context";
@@ -7,6 +7,18 @@ import { faLink, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.scss";
 
 const Footer = () => {
+    const [date, setDate] = useState('');
+    useEffect(() => {
+      const today = new Date();
+      const options = { 
+      // weekday: 'long',
+       year: 'numeric', 
+      //  month: 'long', 
+      //  day: 'numeric' 
+      };
+      const formatter = new Intl.DateTimeFormat('en-US', options);
+      setDate(formatter.format(today));
+    }, []);
   const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
   return (
@@ -40,7 +52,7 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">
-          © {new Date().getFullYear()} -
+          © {date}          {/* {new Date().getFullYear()}  */}   -
           <a
             href="https://github.com/khanmuhammadhridoy"
             target="_blank"

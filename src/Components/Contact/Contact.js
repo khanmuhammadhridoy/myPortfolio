@@ -2,7 +2,9 @@ import React, { useContext } from "react";
 import Fade from "react-reveal/Fade";
 import { Container } from "react-bootstrap";
 import PortfolioContext from "../Context/Context";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
+
 // import { useForm } from "react-hook-form";
 import "./Contact.scss";
 import "../../style/components/_buttons.scss";
@@ -14,7 +16,6 @@ const Contact = () => {
 
   //   formState: { errors },
   // } = useForm();
-
   function sendEmail(e) {
     e.preventDefault();
     // console.log("name", e.target.name.value);

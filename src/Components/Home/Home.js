@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PortfolioProvider } from "../Context/Context";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
