@@ -24,7 +24,7 @@ const Resume = () => {
                       target="_blank"
                       rel="noreferrer"
                       id="pdf"
-                      href="https://drive.google.com/file/d/1wuVp4cpQ5eVBA0KpiNTIqlzrWkuwZdIT/view?usp=sharing"
+                      href="https://docs.google.com/document/d/1_E95PUPZWeWZgoLGsgc0QhHmiG3mx0jrEp6pB1I6GsU/edit?usp=sharing"
                     >
                       Download PDF
                     </a>
